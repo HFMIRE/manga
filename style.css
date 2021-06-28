@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+}
+
+.app {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px
+}
+
+.article {
+    border-bottom: 1px dotted grey;
+    padding: 3px;
+    margin: 2px;
+}
+
+.article .text {
+    font-size: 12px;
+    line-height: 17px;
+    font-family: arial;
+}
+
+.article .text.short {
+    height: 100px;
+    overflow: hidden;
+}
+
+.article .text.full {
+    overflow: visible;
+}
+
+.read-more {
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    padding: 3px;
+    background-color: #06c;
+    color: white;
+    margin: 2px;
+}
